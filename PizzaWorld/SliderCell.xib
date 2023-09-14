@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SliderCell" customModule="PizzaWorld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="369"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="457" height="369"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mso-YE-R9u">
+                        <rect key="frame" x="40" y="40" width="377" height="289"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="2" y="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizzaimage" translatesAutoresizingMaskIntoConstraints="NO" id="4RQ-bi-Iic">
+                        <rect key="frame" x="25" y="25" width="407" height="319"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="0.0" y="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lO-rV-60q">
+                        <rect key="frame" x="51" y="227" width="355" height="90"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="KP3-T9-Ngg">
+                                <rect key="frame" x="230.66666666666671" y="0.0" width="124.33333333333334" height="90"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="ORDER NOW">
+                                            <attributes>
+                                                <font key="NSFont" size="23" name="AmericanTypewriter-Semibold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="woB-Hq-Huz">
+                                <rect key="frame" x="12" y="10" width="213.66666666666666" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SeaFood pesto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdz-gK-nzD">
+                                        <rect key="frame" x="0.0" y="0.0" width="213.66666666666666" height="23.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBb-xd-vZD">
+                                        <rect key="frame" x="0.0" y="23.333333333333314" width="213.66666666666666" height="23.333333333333329"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3bc-dC-lBT">
+                                        <rect key="frame" x="0.0" y="46.666666666666686" width="213.66666666666666" height="23.333333333333329"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ysa-Dz-Q8T">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="23.333333333333332"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dish" translatesAutoresizingMaskIntoConstraints="NO" id="H7b-9t-jUb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="23.333333333333332"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9C4-20-Z7e">
+                                                        <rect key="frame" x="28" y="0.0" width="79" height="23.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-fb-Po5">
+                                                <rect key="frame" x="107" y="0.0" width="106.66666666666669" height="23.333333333333332"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="alarmClock" translatesAutoresizingMaskIntoConstraints="NO" id="KMj-RZ-yFs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="23.333333333333332"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llw-n3-Bcq">
+                                                        <rect key="frame" x="52" y="2.6666666666666288" width="54.666666666666657" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="woB-Hq-Huz" firstAttribute="trailing" secondItem="KP3-T9-Ngg" secondAttribute="leading" constant="-5" id="AWG-hX-vpw"/>
+                            <constraint firstItem="woB-Hq-Huz" firstAttribute="leading" secondItem="7lO-rV-60q" secondAttribute="leading" constant="12" id="OW8-bS-5dC"/>
+                            <constraint firstAttribute="height" constant="90" id="R0W-p5-qQ0"/>
+                            <constraint firstItem="woB-Hq-Huz" firstAttribute="top" secondItem="7lO-rV-60q" secondAttribute="top" constant="10" id="Thd-P4-3n5"/>
+                            <constraint firstItem="KP3-T9-Ngg" firstAttribute="width" secondItem="7lO-rV-60q" secondAttribute="width" multiplier="0.35" id="V13-uK-E9e"/>
+                            <constraint firstAttribute="bottom" secondItem="woB-Hq-Huz" secondAttribute="bottom" constant="10" id="WrI-rS-nnf"/>
+                            <constraint firstAttribute="bottom" secondItem="KP3-T9-Ngg" secondAttribute="bottom" id="vVb-wh-vCs"/>
+                            <constraint firstAttribute="trailing" secondItem="KP3-T9-Ngg" secondAttribute="trailing" id="wtL-8z-jXH"/>
+                            <constraint firstItem="KP3-T9-Ngg" firstAttribute="top" secondItem="7lO-rV-60q" secondAttribute="top" id="zEZ-7c-Fxw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.69999999999999996"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="5" y="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4RQ-bi-Iic" secondAttribute="trailing" constant="25" id="0LA-dL-GrY"/>
+                <constraint firstItem="Mso-YE-R9u" firstAttribute="top" secondItem="4RQ-bi-Iic" secondAttribute="top" constant="15" id="5zx-0v-13w"/>
+                <constraint firstAttribute="bottom" secondItem="4RQ-bi-Iic" secondAttribute="bottom" constant="25" id="6j9-8H-Cxl"/>
+                <constraint firstItem="4RQ-bi-Iic" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="7RE-1B-adh"/>
+                <constraint firstAttribute="bottom" secondItem="7lO-rV-60q" secondAttribute="bottom" constant="52" id="AMV-Dy-EmM"/>
+                <constraint firstItem="7lO-rV-60q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="51" id="CKv-by-y4c"/>
+                <constraint firstAttribute="trailing" secondItem="7lO-rV-60q" secondAttribute="trailing" constant="51" id="FTy-qz-5wD"/>
+                <constraint firstItem="Mso-YE-R9u" firstAttribute="leading" secondItem="4RQ-bi-Iic" secondAttribute="leading" constant="15" id="GXJ-tS-hsa"/>
+                <constraint firstItem="Mso-YE-R9u" firstAttribute="bottom" secondItem="4RQ-bi-Iic" secondAttribute="bottom" constant="-15" id="Ow4-Oe-EDj"/>
+                <constraint firstItem="4RQ-bi-Iic" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="U40-Lg-cNj"/>
+                <constraint firstItem="Mso-YE-R9u" firstAttribute="trailing" secondItem="4RQ-bi-Iic" secondAttribute="trailing" constant="-15" id="nt3-eb-Mkt"/>
+            </constraints>
+            <size key="customSize" width="457" height="369"/>
+            <point key="canvasLocation" x="200.76335877862596" y="43.309859154929576"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="alarmClock" width="59" height="59"/>
+        <image name="dish" width="13" height="12"/>
+        <image name="pizzaimage" width="323" height="322"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
