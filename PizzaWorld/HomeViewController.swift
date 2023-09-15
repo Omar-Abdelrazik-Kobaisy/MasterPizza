@@ -10,12 +10,21 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var sliderCollectionView: UICollectionView!
+    var sliderTimer : Timer?
+    var slides : [Int] = [1,2,3,4,5]
+    var currentSlides = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
         sliderCollectionView.delegate = self
         sliderCollectionView.dataSource = self
         sliderCollectionView.registerCell(cellClass: SliderCell.self)
+        sliderTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(scrollToNextItem), userInfo: nil, repeats: true)
+    }
+    @objc func scrollToNextItem(){
+        let next = currentSlides + 1;
+        currentSlides = next % slides.count
+        sliderCollectionView.scrollToItem(at: IndexPath(row: currentSlides, section: 0), at: .centeredHorizontally, animated: true)
     }
 }
 extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource ,
