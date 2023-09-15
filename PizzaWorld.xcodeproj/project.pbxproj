@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071D57E92AB3CB9E004762E8 /* RattingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D57E82AB3CB9E004762E8 /* RattingController.swift */; };
+		0766308D2AB3174A005E4751 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766308B2AB3174A005E4751 /* SliderCell.swift */; };
+		0766308E2AB3174A005E4751 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0766308C2AB3174A005E4751 /* SliderCell.xib */; };
+		076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */; };
+		076630922AB32BE4005E4751 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076630912AB32BE4005E4751 /* UIView+Extensions.swift */; };
+		076630942AB39780005E4751 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076630932AB39780005E4751 /* RatingView.swift */; };
 		07974CC62AB1EB57006943E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CC52AB1EB57006943E1 /* AppDelegate.swift */; };
 		07974CC82AB1EB57006943E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CC72AB1EB57006943E1 /* SceneDelegate.swift */; };
 		07974CCF2AB1EB59006943E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07974CCE2AB1EB59006943E1 /* Assets.xcassets */; };
@@ -16,6 +22,10 @@
 		07974CE92AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CE82AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift */; };
 		07974CF72AB1F0C5006943E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CF52AB1F0C5006943E1 /* HomeViewController.swift */; };
 		07974CF82AB1F0C5006943E1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07974CF62AB1F0C5006943E1 /* HomeViewController.xib */; };
+		07F47BD92AB4D772002323C0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F47BD82AB4D772002323C0 /* HomeViewModel.swift */; };
+		07F47BDC2AB4F081002323C0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 07F47BDB2AB4F081002323C0 /* RxCocoa */; };
+		07F47BDE2AB4F081002323C0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 07F47BDD2AB4F081002323C0 /* RxRelay */; };
+		07F47BE02AB4F081002323C0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 07F47BDF2AB4F081002323C0 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071D57E82AB3CB9E004762E8 /* RattingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RattingController.swift; sourceTree = "<group>"; };
+		0766308B2AB3174A005E4751 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
+		0766308C2AB3174A005E4751 /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
+		0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		076630912AB32BE4005E4751 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		076630932AB39780005E4751 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		07974CC22AB1EB57006943E1 /* PizzaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07974CC52AB1EB57006943E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07974CC72AB1EB57006943E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		07974CE82AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07974CF52AB1F0C5006943E1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		07974CF62AB1F0C5006943E1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		07F47BD82AB4D772002323C0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F47BE02AB4F081002323C0 /* RxSwift in Frameworks */,
+				07F47BDE2AB4F081002323C0 /* RxRelay in Frameworks */,
+				07F47BDC2AB4F081002323C0 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +119,14 @@
 		07974CC42AB1EB57006943E1 /* PizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
+				07F47BD72AB4D753002323C0 /* ViewModel */,
+				07F47BD62AB4D62C002323C0 /* UI */,
+				07F47BD42AB4D573002323C0 /* Extensions */,
 				07974CC52AB1EB57006943E1 /* AppDelegate.swift */,
 				07974CC72AB1EB57006943E1 /* SceneDelegate.swift */,
 				07974CCE2AB1EB59006943E1 /* Assets.xcassets */,
 				07974CD02AB1EB59006943E1 /* LaunchScreen.storyboard */,
 				07974CD32AB1EB59006943E1 /* Info.plist */,
-				07974CF52AB1F0C5006943E1 /* HomeViewController.swift */,
-				07974CF62AB1F0C5006943E1 /* HomeViewController.xib */,
 			);
 			path = PizzaWorld;
 			sourceTree = "<group>";
@@ -127,6 +148,68 @@
 			path = PizzaWorldUITests;
 			sourceTree = "<group>";
 		};
+		07F47BD12AB4D508002323C0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07F47BD32AB4D554002323C0 /* View */,
+				07F47BD22AB4D515002323C0 /* Cells */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		07F47BD22AB4D515002323C0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				07F47BD52AB4D5B8002323C0 /* RatingView */,
+				0766308B2AB3174A005E4751 /* SliderCell.swift */,
+				0766308C2AB3174A005E4751 /* SliderCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		07F47BD32AB4D554002323C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07974CF52AB1F0C5006943E1 /* HomeViewController.swift */,
+				07974CF62AB1F0C5006943E1 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07F47BD42AB4D573002323C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */,
+				076630912AB32BE4005E4751 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		07F47BD52AB4D5B8002323C0 /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				076630932AB39780005E4751 /* RatingView.swift */,
+				071D57E82AB3CB9E004762E8 /* RattingController.swift */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
+		07F47BD62AB4D62C002323C0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				07F47BD12AB4D508002323C0 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		07F47BD72AB4D753002323C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07F47BD82AB4D772002323C0 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +226,11 @@
 			dependencies = (
 			);
 			name = PizzaWorld;
+			packageProductDependencies = (
+				07F47BDB2AB4F081002323C0 /* RxCocoa */,
+				07F47BDD2AB4F081002323C0 /* RxRelay */,
+				07F47BDF2AB4F081002323C0 /* RxSwift */,
+			);
 			productName = PizzaWorld;
 			productReference = 07974CC22AB1EB57006943E1 /* PizzaWorld.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +303,9 @@
 				Base,
 			);
 			mainGroup = 07974CB92AB1EB57006943E1;
+			packageReferences = (
+				07F47BDA2AB4F081002323C0 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 07974CC32AB1EB57006943E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +324,7 @@
 			files = (
 				07974CD22AB1EB59006943E1 /* LaunchScreen.storyboard in Resources */,
 				07974CCF2AB1EB59006943E1 /* Assets.xcassets in Resources */,
+				0766308E2AB3174A005E4751 /* SliderCell.xib in Resources */,
 				07974CF82AB1F0C5006943E1 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +350,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076630922AB32BE4005E4751 /* UIView+Extensions.swift in Sources */,
+				07F47BD92AB4D772002323C0 /* HomeViewModel.swift in Sources */,
 				07974CC62AB1EB57006943E1 /* AppDelegate.swift in Sources */,
 				07974CC82AB1EB57006943E1 /* SceneDelegate.swift in Sources */,
+				076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */,
+				0766308D2AB3174A005E4751 /* SliderCell.swift in Sources */,
 				07974CF72AB1F0C5006943E1 /* HomeViewController.swift in Sources */,
+				076630942AB39780005E4751 /* RatingView.swift in Sources */,
+				071D57E92AB3CB9E004762E8 /* RattingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +690,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07F47BDA2AB4F081002323C0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07F47BDB2AB4F081002323C0 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07F47BDA2AB4F081002323C0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		07F47BDD2AB4F081002323C0 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07F47BDA2AB4F081002323C0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		07F47BDF2AB4F081002323C0 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07F47BDA2AB4F081002323C0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07974CBA2AB1EB57006943E1 /* Project object */;
 }
