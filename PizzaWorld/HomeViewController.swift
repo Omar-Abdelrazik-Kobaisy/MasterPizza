@@ -27,7 +27,10 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue( cellClass: SliderCell.self, indexPath: indexPath)
-        
+//        cell.stackView.numberOfStarts = {
+//            num in
+//            cell.rate.text = String(num)
+//        }
         return cell
     }
     

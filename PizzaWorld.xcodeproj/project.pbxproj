@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071D57E92AB3CB9E004762E8 /* RattingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D57E82AB3CB9E004762E8 /* RattingController.swift */; };
 		0766308D2AB3174A005E4751 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766308B2AB3174A005E4751 /* SliderCell.swift */; };
 		0766308E2AB3174A005E4751 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0766308C2AB3174A005E4751 /* SliderCell.xib */; };
 		076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */; };
 		076630922AB32BE4005E4751 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076630912AB32BE4005E4751 /* UIView+Extensions.swift */; };
+		076630942AB39780005E4751 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076630932AB39780005E4751 /* RatingView.swift */; };
 		07974CC62AB1EB57006943E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CC52AB1EB57006943E1 /* AppDelegate.swift */; };
 		07974CC82AB1EB57006943E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CC72AB1EB57006943E1 /* SceneDelegate.swift */; };
 		07974CCF2AB1EB59006943E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07974CCE2AB1EB59006943E1 /* Assets.xcassets */; };
@@ -40,10 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071D57E82AB3CB9E004762E8 /* RattingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RattingController.swift; sourceTree = "<group>"; };
 		0766308B2AB3174A005E4751 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
 		0766308C2AB3174A005E4751 /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
 		0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		076630912AB32BE4005E4751 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		076630932AB39780005E4751 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		07974CC22AB1EB57006943E1 /* PizzaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07974CC52AB1EB57006943E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07974CC72AB1EB57006943E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				0766308C2AB3174A005E4751 /* SliderCell.xib */,
 				0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */,
 				076630912AB32BE4005E4751 /* UIView+Extensions.swift */,
+				076630932AB39780005E4751 /* RatingView.swift */,
+				071D57E82AB3CB9E004762E8 /* RattingController.swift */,
 			);
 			path = PizzaWorld;
 			sourceTree = "<group>";
@@ -277,6 +283,8 @@
 				076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */,
 				0766308D2AB3174A005E4751 /* SliderCell.swift in Sources */,
 				07974CF72AB1F0C5006943E1 /* HomeViewController.swift in Sources */,
+				076630942AB39780005E4751 /* RatingView.swift in Sources */,
+				071D57E92AB3CB9E004762E8 /* RattingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
