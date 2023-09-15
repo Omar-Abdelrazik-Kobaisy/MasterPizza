@@ -22,6 +22,7 @@
 		07974CE92AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CE82AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift */; };
 		07974CF72AB1F0C5006943E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CF52AB1F0C5006943E1 /* HomeViewController.swift */; };
 		07974CF82AB1F0C5006943E1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07974CF62AB1F0C5006943E1 /* HomeViewController.xib */; };
+		07F47BD92AB4D772002323C0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F47BD82AB4D772002323C0 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		07974CE82AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07974CF52AB1F0C5006943E1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		07974CF62AB1F0C5006943E1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		07F47BD82AB4D772002323C0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,19 +113,14 @@
 		07974CC42AB1EB57006943E1 /* PizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
+				07F47BD72AB4D753002323C0 /* ViewModel */,
+				07F47BD62AB4D62C002323C0 /* UI */,
+				07F47BD42AB4D573002323C0 /* Extensions */,
 				07974CC52AB1EB57006943E1 /* AppDelegate.swift */,
 				07974CC72AB1EB57006943E1 /* SceneDelegate.swift */,
 				07974CCE2AB1EB59006943E1 /* Assets.xcassets */,
 				07974CD02AB1EB59006943E1 /* LaunchScreen.storyboard */,
 				07974CD32AB1EB59006943E1 /* Info.plist */,
-				07974CF52AB1F0C5006943E1 /* HomeViewController.swift */,
-				07974CF62AB1F0C5006943E1 /* HomeViewController.xib */,
-				0766308B2AB3174A005E4751 /* SliderCell.swift */,
-				0766308C2AB3174A005E4751 /* SliderCell.xib */,
-				0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */,
-				076630912AB32BE4005E4751 /* UIView+Extensions.swift */,
-				076630932AB39780005E4751 /* RatingView.swift */,
-				071D57E82AB3CB9E004762E8 /* RattingController.swift */,
 			);
 			path = PizzaWorld;
 			sourceTree = "<group>";
@@ -143,6 +140,68 @@
 				07974CE82AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift */,
 			);
 			path = PizzaWorldUITests;
+			sourceTree = "<group>";
+		};
+		07F47BD12AB4D508002323C0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07F47BD32AB4D554002323C0 /* View */,
+				07F47BD22AB4D515002323C0 /* Cells */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		07F47BD22AB4D515002323C0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				07F47BD52AB4D5B8002323C0 /* RatingView */,
+				0766308B2AB3174A005E4751 /* SliderCell.swift */,
+				0766308C2AB3174A005E4751 /* SliderCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		07F47BD32AB4D554002323C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07974CF52AB1F0C5006943E1 /* HomeViewController.swift */,
+				07974CF62AB1F0C5006943E1 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07F47BD42AB4D573002323C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */,
+				076630912AB32BE4005E4751 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		07F47BD52AB4D5B8002323C0 /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				076630932AB39780005E4751 /* RatingView.swift */,
+				071D57E82AB3CB9E004762E8 /* RattingController.swift */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
+		07F47BD62AB4D62C002323C0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				07F47BD12AB4D508002323C0 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		07F47BD72AB4D753002323C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07F47BD82AB4D772002323C0 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				076630922AB32BE4005E4751 /* UIView+Extensions.swift in Sources */,
+				07F47BD92AB4D772002323C0 /* HomeViewModel.swift in Sources */,
 				07974CC62AB1EB57006943E1 /* AppDelegate.swift in Sources */,
 				07974CC82AB1EB57006943E1 /* SceneDelegate.swift in Sources */,
 				076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */,

@@ -10,28 +10,33 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var sliderCollectionView: UICollectionView!
-    var sliderTimer : Timer?
-    var slides : [Int] = [1,2,3,4,5]
-    var currentSlides = 0
+    let viewModel = HomeViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+        registerCells()
+        viewModel.viewDidLoad()
+        bind()
+    }
+    func setupUI(){
         sliderCollectionView.delegate = self
         sliderCollectionView.dataSource = self
-        sliderCollectionView.registerCell(cellClass: SliderCell.self)
-        sliderTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(scrollToNextItem), userInfo: nil, repeats: true)
     }
-    @objc func scrollToNextItem(){
-        let next = currentSlides + 1;
-        currentSlides = next % slides.count
-        sliderCollectionView.scrollToItem(at: IndexPath(row: currentSlides, section: 0), at: .centeredHorizontally, animated: true)
+    func registerCells(){
+        sliderCollectionView.registerCell(cellClass: SliderCell.self)
+    }
+    func bind(){
+        viewModel.slideToItemAtIndex = {[weak self]index in
+            self?.sliderCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .centeredHorizontally, animated: true)
+        }
     }
 }
 extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource ,
     UICollectionViewDelegateFlowLayout
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        viewModel.numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
