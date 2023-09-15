@@ -6,11 +6,12 @@
 //
 
 import UIKit
-
+import RxSwift
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var sliderCollectionView: UICollectionView!
     let viewModel = HomeViewModel()
+    var bag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,10 +27,14 @@ class HomeViewController: UIViewController {
     func registerCells(){
         sliderCollectionView.registerCell(cellClass: SliderCell.self)
     }
+    //subscribe 
     func bind(){
-        viewModel.slideToItemAtIndex = {[weak self]index in
+//        viewModel.slideToItemAtIndex = {[weak self]index in
+//            self?.sliderCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .centeredHorizontally, animated: true)
+//        }
+        viewModel.slideToItemAtIndex.subscribe { [weak self]index in
             self?.sliderCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .centeredHorizontally, animated: true)
-        }
+        }.disposed(by: bag)
     }
 }
 extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource ,
