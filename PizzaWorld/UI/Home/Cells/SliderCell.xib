@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mso-YE-R9u">
-                        <rect key="frame" x="40" y="40" width="543" height="501"/>
+                        <rect key="frame" x="35" y="40" width="553" height="501"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
@@ -227,10 +227,10 @@
                 <constraint firstAttribute="bottom" secondItem="7lO-rV-60q" secondAttribute="bottom" constant="52" id="AMV-Dy-EmM"/>
                 <constraint firstItem="7lO-rV-60q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="31" id="CKv-by-y4c"/>
                 <constraint firstAttribute="trailing" secondItem="7lO-rV-60q" secondAttribute="trailing" constant="31" id="FTy-qz-5wD"/>
-                <constraint firstItem="Mso-YE-R9u" firstAttribute="leading" secondItem="4RQ-bi-Iic" secondAttribute="leading" constant="15" id="GXJ-tS-hsa"/>
+                <constraint firstItem="Mso-YE-R9u" firstAttribute="leading" secondItem="4RQ-bi-Iic" secondAttribute="leading" constant="10" id="GXJ-tS-hsa"/>
                 <constraint firstItem="Mso-YE-R9u" firstAttribute="bottom" secondItem="4RQ-bi-Iic" secondAttribute="bottom" constant="-15" id="Ow4-Oe-EDj"/>
                 <constraint firstItem="4RQ-bi-Iic" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="U40-Lg-cNj"/>
-                <constraint firstItem="Mso-YE-R9u" firstAttribute="trailing" secondItem="4RQ-bi-Iic" secondAttribute="trailing" constant="-15" id="nt3-eb-Mkt"/>
+                <constraint firstItem="Mso-YE-R9u" firstAttribute="trailing" secondItem="4RQ-bi-Iic" secondAttribute="trailing" constant="-10" id="nt3-eb-Mkt"/>
             </constraints>
             <size key="customSize" width="623" height="581"/>
             <connections>
