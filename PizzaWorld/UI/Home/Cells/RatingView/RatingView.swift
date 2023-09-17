@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-@IBDesignable class RatingView : UIView {
+ class RatingView : UIView {
     //MARK: UI PRIVATE Configuration
     private let maxRatting : Int = 5
     //MARK: UI Public Confguration
@@ -20,35 +20,66 @@ import UIKit
 //        stack.backgroundColor = .red
         return stack
     }()
+     lazy var rate : UILabel = {
+        let rateLabel = UILabel()
+         rateLabel.textColor = .black
+         rateLabel.textAlignment = .center
+         rateLabel.layer.borderColor = UIColor.yellow.cgColor
+         rateLabel.layer.borderWidth = 2
+         rateLabel.layer.cornerRadius = 15
+         
+         return rateLabel
+     }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+//        configureWithRating(rating: rating)
+    }
     
     required init?(coder : NSCoder) {
         super.init(coder: coder) 
         setupUI()
-        configureWithRating(rating: 3)
+//        configureWithRating(rating: rating)
     }
     
-    func configureWithRating(rating : Int){
-        var image : UIImageView
-        if rating == 0{
-            for rate in 1...maxRatting{
-                if(rate<=rating)
-                {
-                    image = generateStarView(.filled)
-                    stackView.addArrangedSubview(image)
-                }
-                image = generateStarView(.empty)
-                stackView.addArrangedSubview(image)
-            }
-        }
+     func configureWithRating(rating : Int = 0,style : Style = .full){
+         var image : UIImageView
+         switch style
+         {
+         case .full:
+             
+             if rating > 0{
+                 for rate in 1...maxRatting{
+                     if(rate<=rating)
+                     {
+                         image = generateStarView(.filled)
+                         stackView.addArrangedSubview(image)
+                     }else{
+                         image = generateStarView(.empty)
+                         stackView.addArrangedSubview(image)
+                     }
+                 }
+             }
+         case .compact:
+             image = generateStarView(.filled)
+             stackView.addArrangedSubview(image)
+         }
     }
     
     func setupUI(){
         self.addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        stackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        stackView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        stackView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.35).isActive = true
+        stackView.leftAnchor.constraint(equalTo: self.leftAnchor , constant: 30).isActive = true
         stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        self.addSubview(rate)
+        rate.translatesAutoresizingMaskIntoConstraints = false
+        rate.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        rate.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.35).isActive = true
+        rate.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        rate.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
     
     func generateStarView(_ type : StarType) -> UIImageView{
@@ -68,4 +99,8 @@ import UIKit
         case filled
         case empty
     }
+     enum Style {
+         case full
+         case compact
+     }
 }
