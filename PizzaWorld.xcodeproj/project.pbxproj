@@ -13,6 +13,11 @@
 		076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */; };
 		076630922AB32BE4005E4751 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076630912AB32BE4005E4751 /* UIView+Extensions.swift */; };
 		076630942AB39780005E4751 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076630932AB39780005E4751 /* RatingView.swift */; };
+		077784D62AB715D600FC4D07 /* CustomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077784D52AB715D600FC4D07 /* CustomeTabBarController.swift */; };
+		077784D82AB721D700FC4D07 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077784D72AB721D700FC4D07 /* UIColor+Extensions.swift */; };
+		077784DA2AB7252300FC4D07 /* CustomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077784D92AB7252300FC4D07 /* CustomeTabBar.swift */; };
+		079121CF2AB6213400FCC39F /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079121CE2AB6213400FCC39F /* UITableView+Extensions.swift */; };
+		079121D22AB630AE00FCC39F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079121D12AB630AE00FCC39F /* Product.swift */; };
 		07974CC62AB1EB57006943E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CC52AB1EB57006943E1 /* AppDelegate.swift */; };
 		07974CC82AB1EB57006943E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CC72AB1EB57006943E1 /* SceneDelegate.swift */; };
 		07974CCF2AB1EB59006943E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07974CCE2AB1EB59006943E1 /* Assets.xcassets */; };
@@ -22,6 +27,8 @@
 		07974CE92AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CE82AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift */; };
 		07974CF72AB1F0C5006943E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07974CF52AB1F0C5006943E1 /* HomeViewController.swift */; };
 		07974CF82AB1F0C5006943E1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07974CF62AB1F0C5006943E1 /* HomeViewController.xib */; };
+		07B90F942AB60830005E6F71 /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B90F922AB60830005E6F71 /* PopularCell.swift */; };
+		07B90F952AB60830005E6F71 /* PopularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B90F932AB60830005E6F71 /* PopularCell.xib */; };
 		07F47BD92AB4D772002323C0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F47BD82AB4D772002323C0 /* HomeViewModel.swift */; };
 		07F47BDC2AB4F081002323C0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 07F47BDB2AB4F081002323C0 /* RxCocoa */; };
 		07F47BDE2AB4F081002323C0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 07F47BDD2AB4F081002323C0 /* RxRelay */; };
@@ -52,6 +59,11 @@
 		0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		076630912AB32BE4005E4751 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		076630932AB39780005E4751 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		077784D52AB715D600FC4D07 /* CustomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTabBarController.swift; sourceTree = "<group>"; };
+		077784D72AB721D700FC4D07 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		077784D92AB7252300FC4D07 /* CustomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTabBar.swift; sourceTree = "<group>"; };
+		079121CE2AB6213400FCC39F /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		079121D12AB630AE00FCC39F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		07974CC22AB1EB57006943E1 /* PizzaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07974CC52AB1EB57006943E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07974CC72AB1EB57006943E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +77,8 @@
 		07974CE82AB1EB5A006943E1 /* PizzaWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07974CF52AB1F0C5006943E1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		07974CF62AB1F0C5006943E1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		07B90F922AB60830005E6F71 /* PopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
+		07B90F932AB60830005E6F71 /* PopularCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCell.xib; sourceTree = "<group>"; };
 		07F47BD82AB4D772002323C0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +110,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077784D42AB7155400FC4D07 /* CustomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				077784D52AB715D600FC4D07 /* CustomeTabBarController.swift */,
+				077784D92AB7252300FC4D07 /* CustomeTabBar.swift */,
+			);
+			path = CustomeTabBar;
+			sourceTree = "<group>";
+		};
+		079121D02AB6309900FCC39F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				079121D12AB630AE00FCC39F /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		07974CB92AB1EB57006943E1 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +150,7 @@
 		07974CC42AB1EB57006943E1 /* PizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
+				079121D02AB6309900FCC39F /* Model */,
 				07F47BD72AB4D753002323C0 /* ViewModel */,
 				07F47BD62AB4D62C002323C0 /* UI */,
 				07F47BD42AB4D573002323C0 /* Extensions */,
@@ -163,6 +195,8 @@
 				07F47BD52AB4D5B8002323C0 /* RatingView */,
 				0766308B2AB3174A005E4751 /* SliderCell.swift */,
 				0766308C2AB3174A005E4751 /* SliderCell.xib */,
+				07B90F922AB60830005E6F71 /* PopularCell.swift */,
+				07B90F932AB60830005E6F71 /* PopularCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -181,6 +215,8 @@
 			children = (
 				0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */,
 				076630912AB32BE4005E4751 /* UIView+Extensions.swift */,
+				079121CE2AB6213400FCC39F /* UITableView+Extensions.swift */,
+				077784D72AB721D700FC4D07 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +233,7 @@
 		07F47BD62AB4D62C002323C0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				077784D42AB7155400FC4D07 /* CustomeTabBar */,
 				07F47BD12AB4D508002323C0 /* Home */,
 			);
 			path = UI;
@@ -324,6 +361,7 @@
 			files = (
 				07974CD22AB1EB59006943E1 /* LaunchScreen.storyboard in Resources */,
 				07974CCF2AB1EB59006943E1 /* Assets.xcassets in Resources */,
+				07B90F952AB60830005E6F71 /* PopularCell.xib in Resources */,
 				0766308E2AB3174A005E4751 /* SliderCell.xib in Resources */,
 				07974CF82AB1F0C5006943E1 /* HomeViewController.xib in Resources */,
 			);
@@ -353,10 +391,16 @@
 				076630922AB32BE4005E4751 /* UIView+Extensions.swift in Sources */,
 				07F47BD92AB4D772002323C0 /* HomeViewModel.swift in Sources */,
 				07974CC62AB1EB57006943E1 /* AppDelegate.swift in Sources */,
+				07B90F942AB60830005E6F71 /* PopularCell.swift in Sources */,
 				07974CC82AB1EB57006943E1 /* SceneDelegate.swift in Sources */,
+				079121D22AB630AE00FCC39F /* Product.swift in Sources */,
+				077784DA2AB7252300FC4D07 /* CustomeTabBar.swift in Sources */,
 				076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */,
 				0766308D2AB3174A005E4751 /* SliderCell.swift in Sources */,
+				079121CF2AB6213400FCC39F /* UITableView+Extensions.swift in Sources */,
+				077784D62AB715D600FC4D07 /* CustomeTabBarController.swift in Sources */,
 				07974CF72AB1F0C5006943E1 /* HomeViewController.swift in Sources */,
+				077784D82AB721D700FC4D07 /* UIColor+Extensions.swift in Sources */,
 				076630942AB39780005E4751 /* RatingView.swift in Sources */,
 				071D57E92AB3CB9E004762E8 /* RattingController.swift in Sources */,
 			);
