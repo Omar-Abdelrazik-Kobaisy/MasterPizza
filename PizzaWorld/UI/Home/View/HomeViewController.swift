@@ -8,21 +8,18 @@
 import UIKit
 import RxSwift
 import RxCocoa
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController<HomeViewModel> {
 
     @IBOutlet weak var sliderCollectionView: UICollectionView!
     
     
     @IBOutlet weak var PopularTableView: UITableView!
-    let viewModel = HomeViewModel()
-    var bag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         registerCells()
         viewModel.viewDidLoad()
-        bind()
-        
     }
     func setupUI(){
         if let flowLayout = sliderCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -33,8 +30,8 @@ class HomeViewController: UIViewController {
         sliderCollectionView.registerCell(cellClass: SliderCell.self)
         PopularTableView.registerCellNib(cellClass: PopularCell.self)
     }
-    //subscribe 
-    func bind(){
+    //subscribe
+    override func bind(viewModel: HomeViewModel) {
         viewModel.slide.bind(to: sliderCollectionView.rx.items(cellIdentifier: String(describing: SliderCell.self),cellType: SliderCell.self)){row,slide,item in
             
         }.disposed(by: bag)
@@ -47,7 +44,14 @@ class HomeViewController: UIViewController {
             cell.ratingView.configureWithRating(style : .compact)
             cell.ratingView.rate.text = String(product.rating ?? 0)
         }.disposed(by: bag)
+        sliderCollectionView.rx.itemSelected.subscribe({ [weak self]item in
+            self?.coordinator?.Main.navigate(to: .home)
+        }).disposed(by: bag)
+        PopularTableView.rx.itemSelected.subscribe({ [weak self] item in
+            self?.coordinator?.Main.navigate(to: .home)
+        }).disposed(by: bag)
     }
 }
+    
 
 

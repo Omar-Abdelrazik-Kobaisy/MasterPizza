@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		071D57E92AB3CB9E004762E8 /* RattingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D57E82AB3CB9E004762E8 /* RattingController.swift */; };
+		073154C52AB8EEA7001FDFAE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073154C42AB8EEA7001FDFAE /* Coordinator.swift */; };
+		073154C72AB8FD1A001FDFAE /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073154C62AB8FD1A001FDFAE /* MainNavigator.swift */; };
+		073154CA2AB8FD53001FDFAE /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073154C92AB8FD53001FDFAE /* Navigator.swift */; };
+		073154CD2AB91890001FDFAE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073154CC2AB91890001FDFAE /* BaseViewController.swift */; };
 		0766308D2AB3174A005E4751 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766308B2AB3174A005E4751 /* SliderCell.swift */; };
 		0766308E2AB3174A005E4751 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0766308C2AB3174A005E4751 /* SliderCell.xib */; };
 		076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */; };
@@ -54,6 +58,10 @@
 
 /* Begin PBXFileReference section */
 		071D57E82AB3CB9E004762E8 /* RattingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RattingController.swift; sourceTree = "<group>"; };
+		073154C42AB8EEA7001FDFAE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		073154C62AB8FD1A001FDFAE /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		073154C92AB8FD53001FDFAE /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		073154CC2AB91890001FDFAE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0766308B2AB3174A005E4751 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
 		0766308C2AB3174A005E4751 /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
 		0766308F2AB31D21005E4751 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
@@ -110,6 +118,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073154C32AB8EBF8001FDFAE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				073154C82AB8FD2D001FDFAE /* Protocols */,
+				073154C42AB8EEA7001FDFAE /* Coordinator.swift */,
+				073154C62AB8FD1A001FDFAE /* MainNavigator.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		073154C82AB8FD2D001FDFAE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				073154C92AB8FD53001FDFAE /* Navigator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		073154CB2AB917CF001FDFAE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				073154CC2AB91890001FDFAE /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		077784D42AB7155400FC4D07 /* CustomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +184,8 @@
 		07974CC42AB1EB57006943E1 /* PizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
+				073154CB2AB917CF001FDFAE /* Base */,
+				073154C32AB8EBF8001FDFAE /* Utility */,
 				079121D02AB6309900FCC39F /* Model */,
 				07F47BD72AB4D753002323C0 /* ViewModel */,
 				07F47BD62AB4D62C002323C0 /* UI */,
@@ -388,15 +424,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073154C52AB8EEA7001FDFAE /* Coordinator.swift in Sources */,
 				076630922AB32BE4005E4751 /* UIView+Extensions.swift in Sources */,
 				07F47BD92AB4D772002323C0 /* HomeViewModel.swift in Sources */,
 				07974CC62AB1EB57006943E1 /* AppDelegate.swift in Sources */,
+				073154CD2AB91890001FDFAE /* BaseViewController.swift in Sources */,
 				07B90F942AB60830005E6F71 /* PopularCell.swift in Sources */,
 				07974CC82AB1EB57006943E1 /* SceneDelegate.swift in Sources */,
 				079121D22AB630AE00FCC39F /* Product.swift in Sources */,
 				077784DA2AB7252300FC4D07 /* CustomeTabBar.swift in Sources */,
+				073154C72AB8FD1A001FDFAE /* MainNavigator.swift in Sources */,
 				076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */,
 				0766308D2AB3174A005E4751 /* SliderCell.swift in Sources */,
+				073154CA2AB8FD53001FDFAE /* Navigator.swift in Sources */,
 				079121CF2AB6213400FCC39F /* UITableView+Extensions.swift in Sources */,
 				077784D62AB715D600FC4D07 /* CustomeTabBarController.swift in Sources */,
 				07974CF72AB1F0C5006943E1 /* HomeViewController.swift in Sources */,

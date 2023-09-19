@@ -23,6 +23,16 @@ class CustomeTabBarController: UITabBarController {
         return button
     }()
     
+    var coordinator : Coordinator
+    
+    init(coordinator : Coordinator){
+        self.coordinator = coordinator
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setValue(CustomeTabBar(), forKey: "tabBar") // to link CustomeTabBar with CustomeTabBarController
@@ -53,20 +63,23 @@ class CustomeTabBarController: UITabBarController {
     }
     //create funcion setupTabBarItems iterate on enum
     private func setupTabBarItem(){
-        self.viewControllers = TabBarItems.allCases.map{viewControllerForTabBarItem($0)}
+        self.viewControllers = TabBarItems.allCases.map{
+            let root = viewControllerForTabBarItem($0)
+            return UINavigationController.init(rootViewController: root)
+        }
     }
     // create function generate every controller for a specific tabBarItem
     private func viewControllerForTabBarItem(_ item: TabBarItems) -> UIViewController{
         let view : UIViewController
         switch item{
         case .Home:
-            view = HomeViewController()
+            view = coordinator.Main.viewController(for: .home)
             view.tabBarItem = tabBarItem(for: item)
         case .PizzaMaker:
-            view = HomeViewController()
+            view = coordinator.Main.viewController(for: .home)
             view.tabBarItem = tabBarItem(for: item)
         case .Cart:
-            view = HomeViewController()
+            view = coordinator.Main.viewController(for: .home)
             view.tabBarItem = tabBarItem(for: item)
         }
         return view
