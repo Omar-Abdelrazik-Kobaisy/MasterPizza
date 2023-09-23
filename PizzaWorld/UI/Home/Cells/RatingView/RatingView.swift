@@ -43,7 +43,7 @@ import UIKit
 //        configureWithRating(rating: rating)
     }
     
-     func configureWithRating(rating : Int = 0,style : Style = .full){
+     func configureWithRating(rating : Int = 3,style : Style = .full){
          var image : UIImageView
          switch style
          {
