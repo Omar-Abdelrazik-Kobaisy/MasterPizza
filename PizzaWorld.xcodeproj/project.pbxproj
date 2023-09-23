@@ -11,6 +11,11 @@
 		070041DA2AB9FD62008CFA3A /* ItemDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070041D82AB9FD62008CFA3A /* ItemDetailsViewController.xib */; };
 		070041DC2ABA04AD008CFA3A /* ItemDeatilsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070041DB2ABA04AD008CFA3A /* ItemDeatilsViewModel.swift */; };
 		070041DF2ABA4279008CFA3A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070041DE2ABA4279008CFA3A /* ProductViewModel.swift */; };
+		0707C4DA2ABE4FBB007F3272 /* PizzaTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707C4D92ABE4FBB007F3272 /* PizzaTextView.swift */; };
+		0707C4DC2ABE5031007F3272 /* PizzaTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0707C4DB2ABE5031007F3272 /* PizzaTextView.xib */; };
+		0707C4DF2ABE5268007F3272 /* UITextView+Placeholder in Frameworks */ = {isa = PBXBuildFile; productRef = 0707C4DE2ABE5268007F3272 /* UITextView+Placeholder */; };
+		0708956F2ABCF89700CB2ABE /* QuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0708956E2ABCF89700CB2ABE /* QuantityView.swift */; };
+		070895712ABCF8D100CB2ABE /* QuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070895702ABCF8D100CB2ABE /* QuantityView.xib */; };
 		071D57E92AB3CB9E004762E8 /* RattingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D57E82AB3CB9E004762E8 /* RattingController.swift */; };
 		073154C52AB8EEA7001FDFAE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073154C42AB8EEA7001FDFAE /* Coordinator.swift */; };
 		073154C72AB8FD1A001FDFAE /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073154C62AB8FD1A001FDFAE /* MainNavigator.swift */; };
@@ -73,6 +78,10 @@
 		070041D82AB9FD62008CFA3A /* ItemDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailsViewController.xib; sourceTree = "<group>"; };
 		070041DB2ABA04AD008CFA3A /* ItemDeatilsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDeatilsViewModel.swift; sourceTree = "<group>"; };
 		070041DE2ABA4279008CFA3A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		0707C4D92ABE4FBB007F3272 /* PizzaTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTextView.swift; sourceTree = "<group>"; };
+		0707C4DB2ABE5031007F3272 /* PizzaTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaTextView.xib; sourceTree = "<group>"; };
+		0708956E2ABCF89700CB2ABE /* QuantityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityView.swift; sourceTree = "<group>"; };
+		070895702ABCF8D100CB2ABE /* QuantityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuantityView.xib; sourceTree = "<group>"; };
 		071D57E82AB3CB9E004762E8 /* RattingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RattingController.swift; sourceTree = "<group>"; };
 		073154C42AB8EEA7001FDFAE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		073154C62AB8FD1A001FDFAE /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
@@ -121,6 +130,7 @@
 			files = (
 				07F47BE02AB4F081002323C0 /* RxSwift in Frameworks */,
 				07F47BDE2AB4F081002323C0 /* RxRelay in Frameworks */,
+				0707C4DF2ABE5268007F3272 /* UITextView+Placeholder in Frameworks */,
 				07F47BDC2AB4F081002323C0 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +167,24 @@
 				070041DE2ABA4279008CFA3A /* ProductViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0707C4D82ABE4F7A007F3272 /* TextViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0707C4D92ABE4FBB007F3272 /* PizzaTextView.swift */,
+				0707C4DB2ABE5031007F3272 /* PizzaTextView.xib */,
+			);
+			path = TextViewComponent;
+			sourceTree = "<group>";
+		};
+		0708956D2ABCF87E00CB2ABE /* QuantityView */ = {
+			isa = PBXGroup;
+			children = (
+				0708956E2ABCF89700CB2ABE /* QuantityView.swift */,
+				070895702ABCF8D100CB2ABE /* QuantityView.xib */,
+			);
+			path = QuantityView;
 			sourceTree = "<group>";
 		};
 		073154C32AB8EBF8001FDFAE /* Utility */ = {
@@ -348,6 +376,8 @@
 		07F47BD62AB4D62C002323C0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0707C4D82ABE4F7A007F3272 /* TextViewComponent */,
+				0708956D2ABCF87E00CB2ABE /* QuantityView */,
 				0783496C2ABB910B00AD894F /* NibLoadingView */,
 				078349692ABB8E9800AD894F /* SizesSelectorView */,
 				070041D62AB9F9CF008CFA3A /* ItemDetails */,
@@ -387,6 +417,7 @@
 				07F47BDB2AB4F081002323C0 /* RxCocoa */,
 				07F47BDD2AB4F081002323C0 /* RxRelay */,
 				07F47BDF2AB4F081002323C0 /* RxSwift */,
+				0707C4DE2ABE5268007F3272 /* UITextView+Placeholder */,
 			);
 			productName = PizzaWorld;
 			productReference = 07974CC22AB1EB57006943E1 /* PizzaWorld.app */;
@@ -462,6 +493,7 @@
 			mainGroup = 07974CB92AB1EB57006943E1;
 			packageReferences = (
 				07F47BDA2AB4F081002323C0 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0707C4DD2ABE5268007F3272 /* XCRemoteSwiftPackageReference "UITextView-Placeholder" */,
 			);
 			productRefGroup = 07974CC32AB1EB57006943E1 /* Products */;
 			projectDirPath = "";
@@ -479,9 +511,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070895712ABCF8D100CB2ABE /* QuantityView.xib in Resources */,
 				07974CD22AB1EB59006943E1 /* LaunchScreen.storyboard in Resources */,
 				07974CCF2AB1EB59006943E1 /* Assets.xcassets in Resources */,
 				070041DA2AB9FD62008CFA3A /* ItemDetailsViewController.xib in Resources */,
+				0707C4DC2ABE5031007F3272 /* PizzaTextView.xib in Resources */,
 				07B90F952AB60830005E6F71 /* PopularCell.xib in Resources */,
 				0766308E2AB3174A005E4751 /* SliderCell.xib in Resources */,
 				078349792ABB998100AD894F /* SizesSelectorCell.xib in Resources */,
@@ -515,6 +549,7 @@
 				076630922AB32BE4005E4751 /* UIView+Extensions.swift in Sources */,
 				070041D92AB9FD62008CFA3A /* ItemDetailsViewController.swift in Sources */,
 				07F47BD92AB4D772002323C0 /* HomeViewModel.swift in Sources */,
+				0708956F2ABCF89700CB2ABE /* QuantityView.swift in Sources */,
 				07974CC62AB1EB57006943E1 /* AppDelegate.swift in Sources */,
 				073154CD2AB91890001FDFAE /* BaseViewController.swift in Sources */,
 				070041DF2ABA4279008CFA3A /* ProductViewModel.swift in Sources */,
@@ -528,6 +563,7 @@
 				078349722ABB94B000AD894F /* SizesSelectorViewModel.swift in Sources */,
 				077784DA2AB7252300FC4D07 /* CustomeTabBar.swift in Sources */,
 				073154C72AB8FD1A001FDFAE /* MainNavigator.swift in Sources */,
+				0707C4DA2ABE4FBB007F3272 /* PizzaTextView.swift in Sources */,
 				076630902AB31D21005E4751 /* UICollectionView+Extensions.swift in Sources */,
 				0766308D2AB3174A005E4751 /* SliderCell.swift in Sources */,
 				078349782ABB998100AD894F /* SizesSelectorCell.swift in Sources */,
@@ -872,6 +908,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0707C4DD2ABE5268007F3272 /* XCRemoteSwiftPackageReference "UITextView-Placeholder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/UITextView-Placeholder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		07F47BDA2AB4F081002323C0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -883,6 +927,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0707C4DE2ABE5268007F3272 /* UITextView+Placeholder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0707C4DD2ABE5268007F3272 /* XCRemoteSwiftPackageReference "UITextView-Placeholder" */;
+			productName = "UITextView+Placeholder";
+		};
 		07F47BDB2AB4F081002323C0 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 07F47BDA2AB4F081002323C0 /* XCRemoteSwiftPackageReference "RxSwift" */;
