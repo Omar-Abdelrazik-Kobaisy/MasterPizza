@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemDetailsViewController" customModule="PizzaWorld" customModuleProvider="target">
             <connections>
                 <outlet property="describtion" destination="d5A-Jb-aBd" id="XgI-hg-KpE"/>
+                <outlet property="otherDes" destination="c6c-aF-TiC" id="Ivi-ST-OHy"/>
+                <outlet property="pizzaOptionView" destination="mqx-kV-UdE" id="gab-wu-BIr"/>
                 <outlet property="pizzaTitle" destination="Wts-z9-iqM" id="muz-fB-0Kl"/>
                 <outlet property="ratingView" destination="v6K-Ca-kGK" id="b3F-bN-bM8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,7 +27,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0CI-nG-aeN">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="678.33333333333337"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1089.6666666666667"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-X9-G44">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="290"/>
@@ -114,11 +116,48 @@
                                         </textView>
                                     </subviews>
                                 </stackView>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqx-kV-UdE" customClass="SizesSelectorView" customModule="PizzaWorld" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="528.33333333333337" width="393" height="150"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqx-kV-UdE" customClass="PizzaOptionsView" customModule="PizzaWorld" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="528.33333333333337" width="393" height="450"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="450" id="OLu-WU-0DE"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CK-ZS-KpQ">
+                                    <rect key="frame" x="0.0" y="980.33333333333337" width="393" height="109.33333333333337"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gT-wo-RC2">
+                                            <rect key="frame" x="20" y="49.999999999999886" width="353" height="39.333333333333343"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="filled">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="AddToCart +">
+                                                        <attributes>
+                                                            <font key="NSFont" size="22" name="Helvetica-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didPressAddToCart:" destination="-1" eventType="touchUpInside" id="DhU-j0-mon"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="150" id="OLu-WU-0DE"/>
+                                        <constraint firstAttribute="bottom" secondItem="9gT-wo-RC2" secondAttribute="bottom" constant="20" id="G8e-O6-5Ib"/>
+                                        <constraint firstItem="9gT-wo-RC2" firstAttribute="top" secondItem="4CK-ZS-KpQ" secondAttribute="top" constant="50" id="jvq-3f-mZK"/>
+                                        <constraint firstItem="9gT-wo-RC2" firstAttribute="leading" secondItem="4CK-ZS-KpQ" secondAttribute="leading" constant="20" id="nMY-Mn-IQK"/>
+                                        <constraint firstAttribute="trailing" secondItem="9gT-wo-RC2" secondAttribute="trailing" constant="20" id="zJW-lH-Vkg"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -129,12 +168,13 @@
                                 <constraint firstItem="uE8-X9-G44" firstAttribute="leading" secondItem="0CI-nG-aeN" secondAttribute="leading" id="Os6-gP-igB"/>
                                 <constraint firstItem="mqx-kV-UdE" firstAttribute="leading" secondItem="0CI-nG-aeN" secondAttribute="leading" id="Qhf-NY-Ei0"/>
                                 <constraint firstItem="uE8-X9-G44" firstAttribute="top" secondItem="0CI-nG-aeN" secondAttribute="top" id="Qoh-0V-wJF"/>
+                                <constraint firstItem="4CK-ZS-KpQ" firstAttribute="top" secondItem="mqx-kV-UdE" secondAttribute="bottom" constant="2" id="WOF-Il-rJb"/>
                                 <constraint firstItem="1a0-ws-2BG" firstAttribute="top" secondItem="utN-7g-SgC" secondAttribute="bottom" constant="2" id="ZZr-Cs-XG9"/>
-                                <constraint firstItem="utN-7g-SgC" firstAttribute="top" secondItem="HOR-Bm-c6N" secondAttribute="bottom" constant="2" id="bCw-VR-eIp"/>
                                 <constraint firstAttribute="trailing" secondItem="mqx-kV-UdE" secondAttribute="trailing" id="ish-AQ-rId"/>
                                 <constraint firstItem="1a0-ws-2BG" firstAttribute="leading" secondItem="0CI-nG-aeN" secondAttribute="leading" id="qst-WI-dnC"/>
                                 <constraint firstAttribute="trailing" secondItem="uE8-X9-G44" secondAttribute="trailing" id="rMm-RD-ARl"/>
-                                <constraint firstItem="HOR-Bm-c6N" firstAttribute="top" secondItem="uE8-X9-G44" secondAttribute="bottom" constant="2" id="sOF-gl-tLm"/>
+                                <constraint firstItem="4CK-ZS-KpQ" firstAttribute="leading" secondItem="0CI-nG-aeN" secondAttribute="leading" id="v21-6g-zrU"/>
+                                <constraint firstAttribute="trailing" secondItem="4CK-ZS-KpQ" secondAttribute="trailing" id="w53-om-gqG"/>
                                 <constraint firstAttribute="trailing" secondItem="1a0-ws-2BG" secondAttribute="trailing" id="zhx-8M-Xyc"/>
                             </constraints>
                         </stackView>
@@ -170,6 +210,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

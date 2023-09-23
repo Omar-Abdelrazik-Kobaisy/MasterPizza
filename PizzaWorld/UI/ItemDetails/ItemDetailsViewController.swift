@@ -17,6 +17,12 @@ class ItemDetailsViewController: BaseViewController<ItemDetailsViewModel> {
     
     
     @IBOutlet weak var describtion: UILabel!
+    
+    
+    @IBOutlet weak var pizzaOptionView: PizzaOptionsView!
+    
+    
+    @IBOutlet weak var otherDes: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,7 +41,10 @@ class ItemDetailsViewController: BaseViewController<ItemDetailsViewModel> {
             
         }).disposed(by: bag)
     }
-
+    
+    @IBAction func didPressAddToCart(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

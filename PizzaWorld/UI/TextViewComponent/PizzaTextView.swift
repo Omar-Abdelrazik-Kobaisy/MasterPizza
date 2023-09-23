@@ -6,19 +6,12 @@
 //
 
 import Foundation
+import UIKit
 class PizzaTextView : NibLoadingView {
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
+    @IBOutlet weak var desc: UITextView!
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
     
-    private func setup(){
-        
-    }
+    
+    
 }
