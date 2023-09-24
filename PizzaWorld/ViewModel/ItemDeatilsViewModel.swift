@@ -25,5 +25,9 @@ class ItemDetailsViewModel : ItemDetailsViewModelInPut & ItemDetailsViewModelOut
     func viewDidLoad() {
         let product = ProductViewModel(product)
         displayMainData.onNext(product)
-    }  
+    }
+    
+    func didPressAddToCart(){
+        CartManger.shared.add(product: product)
+    }
 }

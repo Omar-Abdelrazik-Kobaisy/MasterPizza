@@ -19,7 +19,7 @@ class HomeViewController: BaseViewController<HomeViewModel> {
         super.viewDidLoad()
         setupUI()
         registerCells()
-        viewModel.viewDidLoad()
+        viewModel?.viewDidLoad()
 //        setupPopularItemsTabelView()
     }
     func setupUI(){

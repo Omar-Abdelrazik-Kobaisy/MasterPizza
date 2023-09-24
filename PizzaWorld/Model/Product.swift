@@ -10,9 +10,13 @@ class Product {
     var title : String?
     var desc : String?
     var rating : Int?
-    init(title: String? = nil, desc: String? = nil, rating: Int? = nil) {
+    var price : Double?
+    var quantity : Int
+    init(title: String? = nil, desc: String? = nil, rating: Int? = nil , price : Double? = nil , quantity: Int = 1) {
         self.title = title
         self.desc = desc
         self.rating = rating
+        self.price = price
+        self.quantity = quantity
     }
 }
