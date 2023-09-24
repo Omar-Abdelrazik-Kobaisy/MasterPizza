@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="CartItemCell" customModule="PizzaWorld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="518" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="518" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizzaPng13" translatesAutoresizingMaskIntoConstraints="NO" id="l2l-XA-hC3">
+                        <rect key="frame" x="0.0" y="0.0" width="129.66666666666666" height="130"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0ew-3W-ayz">
+                        <rect key="frame" x="135" y="5" width="378" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Supreme (L) x 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awt-uX-lu2">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes : No notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adn-Rg-n5B">
+                                <rect key="frame" x="0.0" y="40" width="378" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20.03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvN-NW-2iY">
+                                <rect key="frame" x="0.0" y="80" width="378" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.24409011110000001" green="0.51432244890000001" blue="0.02703400903" alpha="0.92992840700000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0ew-3W-ayz" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.73" id="3Pu-4t-Qmp"/>
+                    <constraint firstAttribute="bottom" secondItem="0ew-3W-ayz" secondAttribute="bottom" constant="5" id="KFH-rR-WxS"/>
+                    <constraint firstItem="0ew-3W-ayz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="OQs-ix-bXo"/>
+                    <constraint firstItem="l2l-XA-hC3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Smc-LT-tiy"/>
+                    <constraint firstAttribute="trailing" secondItem="0ew-3W-ayz" secondAttribute="trailing" constant="5" id="Tut-vq-VUi"/>
+                    <constraint firstItem="l2l-XA-hC3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="brd-au-qXk"/>
+                    <constraint firstItem="l2l-XA-hC3" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="gO8-15-8sQ"/>
+                    <constraint firstAttribute="bottom" secondItem="l2l-XA-hC3" secondAttribute="bottom" id="rq8-Hj-abB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="item_Label" destination="awt-uX-lu2" id="F6n-ya-Bge"/>
+                <outlet property="notes_Label" destination="adn-Rg-n5B" id="dd6-SI-44H"/>
+                <outlet property="pizza_img" destination="l2l-XA-hC3" id="fWI-A5-tK6"/>
+                <outlet property="price_Label" destination="xvN-NW-2iY" id="uZZ-3B-0NH"/>
+            </connections>
+            <point key="canvasLocation" x="163" y="15"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pizzaPng13" width="79" height="77"/>
+    </resources>
+</document>
