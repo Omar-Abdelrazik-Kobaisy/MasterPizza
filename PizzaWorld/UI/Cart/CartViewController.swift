@@ -26,9 +26,11 @@ class CartViewController: BaseViewController<CartViewModel> {
     func configureTableView(){
         registerCells()
         tableView.rx.setDelegate(self).disposed(by: bag)
+        viewModel?.bind()
         viewModel?.cartItemObservable.bind(to: tableView.rx.items(cellIdentifier: String(describing: CartItemCell.self),cellType: CartItemCell.self)){ index , model , cell in
             cell.configureCell(cart: model)
         }.disposed(by: bag)
+        
     }
     func registerCells(){
         tableView.registerCellNib(cellClass: CartItemCell.self)
@@ -46,7 +48,7 @@ class CartViewController: BaseViewController<CartViewModel> {
 extension CartViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeue(cellClass: CartHeaderCell.self)
-        
+        cell.configureCell()
         return cell
     }
     

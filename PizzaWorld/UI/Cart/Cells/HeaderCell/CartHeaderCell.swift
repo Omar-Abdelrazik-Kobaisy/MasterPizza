@@ -17,6 +17,17 @@ class CartHeaderCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func configureCell(){
+        let count = CartManger.shared.itemsCount
+        if count == 1 {
+            numberOfItems.text = "\(count) item"
+        }else{
+            numberOfItems.text = "\(count) items"
+        }
+         
+        totalPriceLabel.text = "\(CartManger.shared.totalCoast) $ "
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

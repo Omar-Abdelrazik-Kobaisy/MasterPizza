@@ -14,6 +14,7 @@ protocol CartViewModelInput{
 }
 protocol CartViewModelOutput{
     var cartItemObservable : Observable<[CartItemViewModel]> { get}
+//    var cartHeaderDidChange : Observable<CartHeaderViewModel> { get}
 }
 
 protocol CartViewModelProtocol : CartViewModelInput & CartViewModelOutput {
@@ -22,7 +23,9 @@ protocol CartViewModelProtocol : CartViewModelInput & CartViewModelOutput {
 }
 class CartViewModel : CartViewModelProtocol{
    
-    private var cartItems : BehaviorRelay<[CartItemViewModel]> = BehaviorRelay<[CartItemViewModel]>(value:[ CartItemViewModel(Cart(product: Product(title: "pizza;)",desc: "",rating: 3), notes: "good")),CartItemViewModel(Cart(product: Product(title: "Burger;)",desc: "",rating: 3), notes: "good"))])
+    private var cartItems : BehaviorRelay<[CartItemViewModel]> = BehaviorRelay<[CartItemViewModel]>(value:[])
+//    private var cartHeaderItem : PublishSubject<CartHeaderViewModel> = PublishSubject<CartHeaderViewModel>()
+    private let bag = DisposeBag()
     
     var input : CartViewModelInput {
         return self
@@ -33,5 +36,15 @@ class CartViewModel : CartViewModelProtocol{
     //outputs
     var cartItemObservable: Observable<[CartItemViewModel]>  {
         return cartItems.asObservable()
+    }
+//    var cartHeaderDidChange : Observable<CartHeaderViewModel> {
+//        return cartHeaderItem.asObservable()
+//    }
+    
+    func bind(){
+        CartManger.shared.itemsObservable.subscribe(onNext : {[unowned self]items in
+            let mappedItems = items.map(CartItemViewModel.init)
+            self.cartItems.accept(mappedItems)
+        }).disposed(by: bag)
     }
 }

@@ -13,7 +13,12 @@ class CartItemViewModel {
     
     init(_ cart : Cart) {
         self.product = cart.product
-        self.note = cart.notes
+        if let note = cart.notes{
+            self.note = "Notes : \(note)"
+        }else{
+            self.note = "Notes : No Notes"
+        }
+        
     }
     
 }
