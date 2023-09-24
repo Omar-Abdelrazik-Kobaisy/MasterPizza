@@ -28,7 +28,7 @@ class ItemDetailsViewController: BaseViewController<ItemDetailsViewModel> {
 
         // Do any additional setup after loading the view.
         
-        viewModel.viewDidLoad()
+        viewModel?.viewDidLoad()
     }
 
     override func bind(viewModel: ItemDetailsViewModel) {
@@ -43,6 +43,7 @@ class ItemDetailsViewController: BaseViewController<ItemDetailsViewModel> {
     }
     
     @IBAction func didPressAddToCart(_ sender: Any) {
+        viewModel?.didPressAddToCart()
     }
     
     /*

@@ -23,7 +23,7 @@ class HomeViewModel : HomeViewModelInput & HomeViewModelOutPut{
 //MARK: PRIVATE ITEMS OWNS BY VIEWMODEL
     private var sliderTimer : Timer?
     private var slides : BehaviorRelay<[Int]> = BehaviorRelay(value: [1,2,3,4,5])
-    private var products : BehaviorRelay<[Product]> = BehaviorRelay(value: [Product(title:"Tropical Storm",desc: "Cheesy mayo sauce and mozzarella tomatoms , green pepper , onion" , rating: 2),Product(title:"Ocean Delight",desc: "squid , clams, crab stick ,Cheesy mayo sauce and mozzarella tomatoms , green pepper , onion" , rating: 3),Product(title:"Hawaiian paradise",desc: "Cheesy mayo sauce and mozzarella tomatoms , green pepper , onion" , rating: 5),Product(title:"Ocean Delight",desc: "squid , clams, crab stick ,Cheesy mayo sauce and mozzarella tomatoms , green pepper , onion" , rating: 3)])
+    private var products : BehaviorRelay<[Product]> = BehaviorRelay(value: [Product(title:"Tropical Storm",desc: "Cheesy mayo sauce and mozzarella tomatoms , green pepper , onion" , rating: 2,price: 20.4),Product(title:"Ocean Delight",desc: "squid , clams, crab stick ,Cheesy mayo sauce and mozzarella tomatoms , green pepper , onion" , rating: 3,price: 25.4),Product(title:"Hawaiian paradise",desc: "Cheesy mayo sauce and mozzarella tomatoms , green pepper , onion" , rating: 5,price: 30.4),Product(title:"Ocean Delight",desc: "squid , clams, crab stick ,Cheesy mayo sauce and mozzarella tomatoms , green pepper , onion" , rating: 3,price: 35.4)])
     private var currentSlides = 0
 //MARK: PUBLIC VARIABLES
     var numberOfItems : Int {
