@@ -9,4 +9,5 @@ import Foundation
 struct Cart {
     let product : Product?
     let notes : String?
+    var quantity : Int = 1
 }

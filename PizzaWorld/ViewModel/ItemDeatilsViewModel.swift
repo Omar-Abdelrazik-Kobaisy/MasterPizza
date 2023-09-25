@@ -27,7 +27,7 @@ class ItemDetailsViewModel : ItemDetailsViewModelInPut & ItemDetailsViewModelOut
         displayMainData.onNext(product)
     }
     
-    func didPressAddToCart(){
-        CartManger.shared.add(product: product)
+    func didPressAddToCart(quantity : Int){
+        CartManger.shared.add(product: product , quantity: quantity )
     }
 }
