@@ -43,7 +43,7 @@ class ItemDetailsViewController: BaseViewController<ItemDetailsViewModel> {
     }
     
     @IBAction func didPressAddToCart(_ sender: Any) {
-        viewModel?.didPressAddToCart()
+        viewModel?.didPressAddToCart(quantity: pizzaOptionView.quantityView.value)
     }
     
     /*

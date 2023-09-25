@@ -10,6 +10,7 @@ import Foundation
 class CartItemViewModel {
     let product : Product?
     let note : String?
+    let quantity : Int
     
     init(_ cart : Cart) {
         self.product = cart.product
@@ -18,7 +19,7 @@ class CartItemViewModel {
         }else{
             self.note = "Notes : No Notes"
         }
-        
+        self.quantity = cart.quantity
     }
     
 }

@@ -27,7 +27,7 @@ class CartItemCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configureCell(cart : CartItemViewModel){
-        item_Label.text = "\(cart.product?.title ?? "") x \(cart.product?.quantity ?? 0)"
+        item_Label.text = "\(cart.product?.title ?? "") x \(cart.quantity )"
         notes_Label.text = cart.note
         price_Label.text = String(cart.product?.price ?? 0.0)
         notes_Label.text = cart.note
