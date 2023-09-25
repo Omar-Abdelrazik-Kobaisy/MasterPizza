@@ -12,8 +12,12 @@ import RxCocoa
 class QuantityView : NibLoadingView{
     
     @IBOutlet weak var quantity: UILabel!
-    private var currentValue : BehaviorRelay<Int> = BehaviorRelay<Int>(value: 0)
+    private var currentValue : BehaviorRelay<Int> = BehaviorRelay<Int>(value: 1)
     private let bag = DisposeBag()
+    
+    public var value : Int {
+        currentValue.value
+    }
     lazy var currentValueObservable : Observable<Int> = {
         return currentValue.asObservable()
     }()
